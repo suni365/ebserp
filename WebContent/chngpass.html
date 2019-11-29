@@ -1,0 +1,27 @@
+<html>
+	<head>
+	    <title>Exaccpro ERP</title>
+	    <link rel="stylesheet" type="text/css" href="css/style.css">   
+	</head>
+
+    <body id=graph>
+	    <div class="login-box">
+		    <img src="img/avatar.png" class="avatar">
+	        <h1>Change Password Here</h1>
+            <form action="Servebserp" method="post">
+	            <p>New Password</p>
+	            <input type="password" name="newpass" placeholder="Enter Password" maxlength = "15" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+	            <p>Re-Enter Password</p>
+	            <input type="password" name="newpass1" placeholder="Re-Enter Password">
+	            <input type="hidden" name="action" value="chngpass">
+	            <input type="submit" value="Confirm">
+	            <font size = "2">Hint : Must contain at least one number and one uppercase and lowercase letter, and at least 8 or max 15 characters</font>
+            </form>
+       </div>
+       	<script>
+		    var d = new Date(); 
+		    document.getElementById("graph").background = "img/logbg.jpg?ver=" + d.getTime();
+		</script>
+       
+    </body>
+</html>

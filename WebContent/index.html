@@ -1,0 +1,31 @@
+<html>
+	<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	
+	    <title>Exaccpro ERP</title>
+	    <link rel="shortcut icon" type="image/x-icon" href="img/ebserp.ico" />   
+	    <link rel="stylesheet" type="text/css" href="css/style.css">   
+	</head>
+
+    <body id=graph>
+	    <div class="login-box" >
+		    <img src="img/avatar.png" class="avatar">
+	        <h1>Login Here</h1>
+            <form action="Servebserp" method="post">
+	            <p>User Name</p>
+	            <input type="text" name="username" placeholder="Enter Username">
+	            <p>Password</p>
+	            <input type="password" name="password" placeholder="Enter Password">
+	            <input type="submit" name="action" value="login">
+	            <a href="#">Forget Passwords</a>    
+           </form>
+       </div>
+	<script>
+	    var d = new Date(); 
+	    document.getElementById("graph").background = "img/logbg.jpg?ver=" + d.getTime();
+	</script>
+       
+    </body>
+</html>
